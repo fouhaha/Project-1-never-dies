@@ -64,10 +64,12 @@ switch($pageTitle) {
                 $navbarArrayChoice = ['Acceuil' => 'index.php', 'Front ou Back' => 'roadmap.php', 'Formations' => 'howto.php', 'Ressources' => 'ressources.php', 'Infos' => 'infos.php'];
                 foreach ($navbarArrayChoice as $selection => $page) {
                     if ($page == $pageTitlePhp) {
-                        echo "<li class='nav-item'><a class='nav-link active' href=$page>$selection</a>
+                        echo "<li class='nav-item'>
+                                   <a class='nav-link active' href=$page>$selection</a>
                             </li>";
                     } else {
-                        echo "<li class='nav-item'><a class='nav-link' href=$page>$selection</a>
+                        echo "<li class='nav-item'>
+                                   <a class='nav-link' href=$page>$selection</a>
                             </li>";
                     };
                 };

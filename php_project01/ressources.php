@@ -227,6 +227,6 @@ include '_header.php';
 
 <?php
 
-include '_footer.html';
+include '_footer.php';
 
 ?>

@@ -9,29 +9,17 @@
         <!-- Grid row-->
         <div class="row text-center d-flex justify-content-center pt-5 mb-3">
 
-            <!-- Grid column -->
-            <div class="col-lg-2 mb-3">
-                <h6 class="text-uppercase font-weight-bold">
-                    <a href="#!">À PROPOS</a>
-                </h6>
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-lg-2 mb-3">
-                <h6 class="text-uppercase font-weight-bold">
-                    <a href="ressources.php">RESSOURCES</a>
-                </h6>
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-lg-2 mb-3">
-                <h6 class="text-uppercase font-weight-bold">
-                    <a href="infos.php">CONTACT</a>
-                </h6>
-            </div>
-            <!-- Grid column -->
+            <?php
+            $footerArrayChoice = ['À PROPOS' => '#!', 'RESSOURCES' => 'ressources.php', 'CONTACT' => 'infos.php'];
+            foreach ($footerArrayChoice as $selection => $page) {
+                echo "<!-- Grid column -->
+                        <div class='col-lg-2 mb-3'>
+                            <h6 class='text-uppercase font-weight-bold'>
+                                <a href='$page'>$selection</a>
+                            </h6>
+                        </div>";
+            }
+            ?>
 
         </div>
         <!-- Grid row-->
