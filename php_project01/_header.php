@@ -1,5 +1,6 @@
 <?php
 
+$pageTitlePhp = $pageTitle . '.php';
 switch($pageTitle) {
     case 'howto':
         $currentPageTitle = 'How to learn to code - Formations';
@@ -59,22 +60,18 @@ switch($pageTitle) {
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <!-- RAJOUTER LA CLASSE ACTIVE SUR LE li du LIEN CORRESPONDAND A VOTRE PAGE -->
-                    <a class="nav-link active" href="index.php">Accueil</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="roadmap.php">Front ou Back ?</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="howto.php">Formations</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="ressources.php">Ressources</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="infos.php">Infos</a>
-                </li>
+                <?php
+                $navbarArrayChoice = ['Acceuil' => 'index.php', 'Front ou Back' => 'roadmap.php', 'Formations' => 'howto.php', 'Ressources' => 'ressources.php', 'Infos' => 'infos.php'];
+                foreach ($navbarArrayChoice as $selection => $page) {
+                    if ($page == $pageTitlePhp) {
+                        echo "<li class='nav-item'><a class='nav-link active' href=$page>$selection</a>
+                            </li>";
+                    } else {
+                        echo "<li class='nav-item'><a class='nav-link' href=$page>$selection</a>
+                            </li>";
+                    };
+                };
+                ?>
             </ul>
         </div>
     </nav>
