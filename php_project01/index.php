@@ -83,40 +83,15 @@ include '_header.php';
     <section>
         <div id="pading-photo" class="container-fluid text-center">
             <div class="row">
-                <div class="col-lg-4">
-                    <img
-                        src="images/brice.jpg"
-                        width="200" height="200" class="rounded-circle" alt="picture">
-                    <p>Brice</p>
-                </div>
-                <div class="col-lg-4">
-                    <img
-                        src="images/francois.jpg"
-                        width="200" height="200" class="rounded-circle" alt="picture">
-                    <p>François</p>
-                </div>
-                <div class="col-lg-4">
-                    <img
-                        src="images/baptiste.jpeg" width="200" height="200" class="rounded-circle" alt="picture">
-                    <p>Baptiste</p>
-                </div>
-                <div class="col-lg-4">
-                    <img
-                        src="images/hugo.jpg"
-                        width="200" height="200" class="rounded-circle" alt="picture">
-                    <p>Hugo</p>
-                </div>
-                <div class="col-lg-4">
-                    <a href="https://arminsaad.com"><img src="https://arminsaad.com/images/photoP1.png" width="200" height="200"
-                                                         class="rounded-circle" alt="picture"></a>
-                    <p>Armin</p>
-                </div>
-                <div class="col-lg-4">
-                    <img
-                        src="images/riri.jpg"
-                        width="200" height="200" class="rounded-circle" alt="picture">
-                    <p>Riri</p>
-                </div>
+                <?php
+                $teamPictures = ['Brice' => 'images/brice.jpg', 'Francois' => 'images/francois.jpg', 'Baptiste' => 'images/baptiste.jpeg', 'Hugo' => 'images/hugo.jpg', 'Armin' => 'images/armin.png', 'Riri' => 'images/riri.jpg'];
+                foreach ($teamPictures as $name => $picture) {
+                    echo "<div class='col-lg-4'>
+                            <img src='$picture' width='200' height='200' class='rounded-circle' alt='picture'>
+                            <p>$name</p>
+                        </div>";
+                }
+                ?>
             </div>
         </div>
     </section>
