@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-
 <?php
 
 $pageTitle = 'roadmap';
@@ -229,7 +227,7 @@ include '_header.php';
 
                         <!-- Modal footer -->
                         <footer class="modal-footer">
-                            <a href="ressources.html">
+                            <a href="ressources.php">
                                 <h6>Ressources</h6>
                                 <i class='fas fa-plus'></i>
                             </a>
@@ -279,7 +277,7 @@ include '_header.php';
 
                         <!-- Modal footer -->
                         <footer class="modal-footer">
-                            <a href="ressources.html">
+                            <a href="ressources.php">
                                 <h6>Ressources</h6>
                                 <i class='fas fa-plus'></i>
                             </a>
@@ -323,7 +321,7 @@ include '_header.php';
 
                         <!-- Modal footer -->
                         <footer class="modal-footer">
-                            <a href="ressources.html">
+                            <a href="ressources.php">
                                 <h6>Ressources</h6>
                                 <i class='fas fa-plus'></i>
                             </a>
@@ -372,7 +370,7 @@ include '_header.php';
 
                         <!-- Modal footer -->
                         <footer class="modal-footer">
-                            <a href="ressources.html">
+                            <a href="ressources.php">
                                 <h6>Ressources</h6>
                                 <i class='fas fa-plus'></i>
                             </a>
@@ -430,7 +428,7 @@ include '_header.php';
 
                         <!-- Modal footer -->
                         <footer class="modal-footer">
-                            <a href="ressources.html">
+                            <a href="ressources.php">
                                 <h6>Ressources</h6>
                                 <i class='fas fa-plus'></i>
                             </a>

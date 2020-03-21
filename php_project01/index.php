@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-
 <?php
 
 $pageTitle = 'index';
@@ -36,7 +34,7 @@ include '_header.php';
             compétences de
             développeur, ou encore pour vous aider à trouver un moyen de vous former.Vous trouverez aussi des explications sur le
             métier de
-            <a class=hyperlink href="roadmap.html">frontend </a> et de <a class=hyperlink href="roadmap.html">backend </a>,
+            <a class=hyperlink href="roadmap.php">frontend </a> et de <a class=hyperlink href="roadmap.php">backend </a>,
             accompagné de leurs roadmap respectives. </p>
     </section>
     <br><br>
@@ -55,9 +53,9 @@ include '_header.php';
         <!--SECTION 2 À qui s'adresse-t-il ? -->
         <h2 class="text-center wrapper">À qui s'adresse-t-il ?</h2>
         <p class="pl-5 pr-5 pt-4 text-justify">Si tu recherches des informations sur le métier de développeur, des
-            <a class=hyperlink href="ressources.html">ressources </a>
+            <a class=hyperlink href="ressources.php">ressources </a>
             pour apprendre à coder, ou encore des outils pour faciliter ton écosystème de futur développeur, alors tu es au
-            bon endroit ! Garde en tête qu'il existe différents <a class=hyperlink href="howto.html">moyens </a> de devenir
+            bon endroit ! Garde en tête qu'il existe différents <a class=hyperlink href="howto.php">moyens </a> de devenir
             développeur.</p>
     </section>
     <br><br>
@@ -79,7 +77,7 @@ include '_header.php';
         <!--SECTION 3 Presentation de l'equipe-->
         <h2 class="text-center wrapper">La Team</h2>
         <p class="pl-5 pr-5 pt-4 text-justify">Voici les six têtes qui participe à te faciliter la vie de développeur, tu peux nous
-            contacter via le <a class=hyperlink href="infos.html">formulaire </a> :</p>
+            contacter via le <a class=hyperlink href="infos.php">formulaire </a> :</p>
     </section>
     <br><br>
     <section>

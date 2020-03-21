@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-
 <?php
 
 $pageTitle = 'howto';
@@ -43,7 +41,7 @@ include '_header.php';
                             <div class="card card-body m-3">
                                 <h4 class="text-center">Gratuites</h4>
                                 <p class="text-justify">
-                                    Vous trouverez de nombreuses ressources gratuites pour vous former en autodidacte. Des sites comme OpenClassroom, Codeacademy et autres peuvent être des bonnes solutions. Allez faire un tour dans notre section <a href="ressources.html">ressources</a> pour en découvrir plus !
+                                    Vous trouverez de nombreuses ressources gratuites pour vous former en autodidacte. Des sites comme OpenClassroom, Codeacademy et autres peuvent être des bonnes solutions. Allez faire un tour dans notre section <a href="ressources.php">ressources</a> pour en découvrir plus !
                                 </p>
                             </div>
                         </div>
@@ -52,7 +50,7 @@ include '_header.php';
                             <div class="card card-body m-3">
                                 <h4 class="text-center">Payantes</h4>
                                 <p class="text-justify">
-                                    D'autres sites proposent des formations payantes comme <a href="https://www.udemy.com/">Udemy</a> ou Digma (que l'on évoque aussi dans notre page <a href="ressources.html">ressources</a>)
+                                    D'autres sites proposent des formations payantes comme <a href="https://www.udemy.com/">Udemy</a> ou Digma (que l'on évoque aussi dans notre page <a href="ressources.php">ressources</a>)
                                 </p>
                             </div>
                         </div>

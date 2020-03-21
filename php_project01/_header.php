@@ -31,6 +31,8 @@ switch($pageTitle) {
 
 
 
+<!DOCTYPE html>
+
 <html lang="en">
 
 <head>
