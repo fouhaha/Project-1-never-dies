@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
     }
 
     if ($nameErr != "" OR $mailErr != "" OR $topicErr != "" OR $messageErr != "") {
-        $actionPage = "form";
+        $actionPage = "infos.php";
     } else {
         header('location: thanks.php?userName=' . $userName . '&topic=' . $topic . '&userMail=' . $userMail . '&userMessage=' . $userMessage);
     }
@@ -55,7 +55,7 @@ require_once '_header.php';
         <hr class="m-4">
     </section>
     <section>
-        <form class="infos-form" method="POST" action="">
+        <form class="infos-form" method="POST" action="<?php echo $actionPage; ?>">
             <input type="text" placeholder="Nom :" name="userName" required>
             <input type="email" placeholder="@ :" name="userMail" required>
             <select class=infos-select id="infos-motif" name="topic" required>
