@@ -511,6 +511,38 @@ textarea {
     resize: none;
 }
 
+.thanks-section {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 85%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: 8px auto;
+    text-align: center;
+}
+
+.thanks-section h2 {
+    padding-bottom: 30px;
+}
+
+.thanks-section a {
+    background-color: #ff8300;
+    width: 33%;
+    border-radius: 5px;
+    margin: 8px auto;
+    border: none;
+    border-bottom-style: none;
+    padding: 8px;
+    color: grey;
+}
+
+.thanks-section a:hover {
+    background-color: #ffa400;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 .intro-howto {
     padding: 30px;
 }

@@ -22,7 +22,11 @@ include '_header.php';
         <hr class="m-4">
     </section>
     <section>
-        <form class="infos-form">
+        <form class="infos-form" method="POST" action="<?php if ($actionPage == "form") {
+            echo htmlspecialchars($_SERVER["PHP_SELF"]);
+        } else {
+            echo "thanks.php";
+        } ?>">
             <input type="text" placeholder="Nom :" required>
             <input type="email" placeholder="@ :" required>
             <select class=infos-select id="infos-motif" required>

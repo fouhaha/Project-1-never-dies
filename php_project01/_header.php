@@ -16,7 +16,11 @@ switch($pageTitle) {
     case 'roadmap':
         $currentPageTitle = 'How to learn to code - Front ou Back ?';
         break;
+    case 'thanks':
+        $currentPageTitle = 'How to learn to code - Merci !';
+        break;
 }
+$navbarArrayChoice = ['Acceuil' => 'index.php', 'Front ou Back' => 'roadmap.php', 'Formations' => 'howto.php', 'Ressources' => 'ressources.php', 'Infos' => 'infos.php'];
 ?>
 
 <!DOCTYPE html>
@@ -48,7 +52,6 @@ switch($pageTitle) {
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav">
                 <?php
-                $navbarArrayChoice = ['Acceuil' => 'index.php', 'Front ou Back' => 'roadmap.php', 'Formations' => 'howto.php', 'Ressources' => 'ressources.php', 'Infos' => 'infos.php'];
                 foreach ($navbarArrayChoice as $selection => $page) {
                     if ($page == $pageTitlePhp) {
                         echo "<li class='nav-item'>
