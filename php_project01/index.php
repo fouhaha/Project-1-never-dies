@@ -1,13 +1,13 @@
 <?php
-
 $pageTitle = 'index';
+$teamPictures = ['Brice' => 'images/brice.jpg',
+                'Francois' => 'images/francois.jpg',
+                'Baptiste' => 'images/baptiste.jpeg',
+                'Hugo' => 'images/hugo.jpg',
+                'Armin' => 'images/armin.png',
+                'Riri' => 'images/riri.jpg'];
 include '_header.php';
-
 ?>
-
-
-
-
 
     <section>
         <!--BANNIERE-->
@@ -84,7 +84,6 @@ include '_header.php';
         <div id="pading-photo" class="container-fluid text-center">
             <div class="row">
                 <?php
-                $teamPictures = ['Brice' => 'images/brice.jpg', 'Francois' => 'images/francois.jpg', 'Baptiste' => 'images/baptiste.jpeg', 'Hugo' => 'images/hugo.jpg', 'Armin' => 'images/armin.png', 'Riri' => 'images/riri.jpg'];
                 foreach ($teamPictures as $name => $picture) {
                     echo "<div class='col-lg-4'>
                             <img src='$picture' width='200' height='200' class='rounded-circle' alt='picture'>
@@ -97,12 +96,6 @@ include '_header.php';
     </section>
 </main>
 
-
-
-
-
 <?php
-
 include '_footer.php';
-
 ?>

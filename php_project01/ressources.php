@@ -1,13 +1,7 @@
 <?php
-
 $pageTitle = 'ressources';
 include '_header.php';
-
 ?>
-
-
-
-
 
 </header>
 
@@ -221,12 +215,6 @@ include '_header.php';
     <!--/////////////////// FIN ACCORDEON //////////////////  -->
 </main>
 
-
-
-
-
 <?php
-
 include '_footer.php';
-
 ?>

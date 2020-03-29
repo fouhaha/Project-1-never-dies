@@ -1,13 +1,7 @@
 <?php
-
 $pageTitle = 'roadmap';
 include '_header.php';
-
 ?>
-
-
-
-
 
 </header>
 
@@ -804,12 +798,6 @@ include '_header.php';
     </section>
 </main>
 
-
-
-
-
 <?php
-
 include '_footer.php';
-
 ?>

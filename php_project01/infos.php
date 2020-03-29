@@ -1,13 +1,7 @@
 <?php
-
 $pageTitle = 'infos';
 include '_header.php';
-
 ?>
-
-
-
-
 
 </header>
 
@@ -40,12 +34,6 @@ include '_header.php';
 
 </main>
 
-
-
-
-
 <?php
-
 include '_footer.php';
-
 ?>

@@ -1,6 +1,8 @@
-<!DOCTYPE html>
-
 <!-- Footer -->
+<?php
+$footerArrayChoice = ['À PROPOS' => '#!', 'RESSOURCES' => 'ressources.php', 'CONTACT' => 'infos.php'];
+?>
+
 <footer class="page-footer font-small">
 
     <!-- Footer Links -->
@@ -10,7 +12,6 @@
         <div class="row text-center d-flex justify-content-center pt-5 mb-3">
 
             <?php
-            $footerArrayChoice = ['À PROPOS' => '#!', 'RESSOURCES' => 'ressources.php', 'CONTACT' => 'infos.php'];
             foreach ($footerArrayChoice as $selection => $page) {
                 echo "<!-- Grid column -->
                         <div class='col-lg-2 mb-3'>

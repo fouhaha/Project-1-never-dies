@@ -1,5 +1,4 @@
 <?php
-
 $pageTitlePhp = $pageTitle . '.php';
 switch($pageTitle) {
     case 'howto':
@@ -18,19 +17,7 @@ switch($pageTitle) {
         $currentPageTitle = 'How to learn to code - Front ou Back ?';
         break;
 }
-
-
-
 ?>
-
-
-
-
-
-
-
-
-
 
 <!DOCTYPE html>
 

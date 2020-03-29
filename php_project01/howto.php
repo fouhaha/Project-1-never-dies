@@ -1,13 +1,7 @@
 <?php
-
 $pageTitle = 'howto';
 include '_header.php';
-
 ?>
-
-
-
-
 
 </header>
 
@@ -125,12 +119,6 @@ include '_header.php';
 
 </main>
 
-
-
-
-
 <?php
-
 include '_footer.php';
-
 ?>
