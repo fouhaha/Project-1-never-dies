@@ -1,5 +1,10 @@
 <?php
 $pageTitle = 'infos';
+$selectOption = ["\"\" disabled selected hidden>Une question/remarque?",
+                    "\"métier dev.\">Plus de renseignements sur le métier de dev.",
+                    "\"formation\">Question sur les formations, les organismes?",
+                    "\"suggestion\">Suggestion concernant le site",
+                    "\"contact\">Entrer en contact avec l'équipe"];
 include '_header.php';
 ?>
 
@@ -21,11 +26,11 @@ include '_header.php';
             <input type="text" placeholder="Nom :" required>
             <input type="email" placeholder="@ :" required>
             <select class=infos-select id="infos-motif" required>
-                <option value="" disabled selected hidden>Une question/remarque?</option>
-                <option value="métier dev.">Plus de renseignements sur le métier de dev.</option>
-                <option value="formation">Question sur les formations, les organismes?</option>
-                <option value="suggestion">Suggestion concernant le site</option>
-                <option value="contact">Entrer en contact avec l'équipe</option>
+                <?php
+                foreach ($selectOption as $optionChoice) {
+                    echo ("<option value=$optionChoice</option>");
+                }
+                ?>
             </select>
             <textarea label="Message" placeholder="Message :" rows="5"></textarea>
             <input type="submit" value="Envoyer !" class="button">
