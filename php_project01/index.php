@@ -6,7 +6,7 @@ $teamPictures = ['Brice' => 'images/brice.jpg',
                 'Hugo' => 'images/hugo.jpg',
                 'Armin' => 'images/armin.png',
                 'Riri' => 'images/riri.jpg'];
-include '_header.php';
+require_once '_header.php';
 ?>
 
     <section>
@@ -97,5 +97,5 @@ include '_header.php';
 </main>
 
 <?php
-include '_footer.php';
+require_once '_footer.php';
 ?>

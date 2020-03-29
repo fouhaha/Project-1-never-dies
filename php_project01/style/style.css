@@ -543,6 +543,17 @@ textarea {
     text-decoration: none;
 }
 
+.thanks-textarea {
+    width: 85%;
+    border-radius: 5px;
+    margin: 8px auto;
+    border: none;
+    border-bottom-style: none;
+    background-color: white;
+    overflow: auto;
+    resize: none;
+}
+
 .intro-howto {
     padding: 30px;
 }

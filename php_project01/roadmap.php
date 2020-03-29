@@ -1,6 +1,6 @@
 <?php
 $pageTitle = 'roadmap';
-include '_header.php';
+require_once '_header.php';
 ?>
 
 </header>
@@ -799,5 +799,5 @@ include '_header.php';
 </main>
 
 <?php
-include '_footer.php';
+require_once '_footer.php';
 ?>
