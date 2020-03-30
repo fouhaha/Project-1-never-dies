@@ -1,6 +1,6 @@
 <?php
 $pageTitle = 'infos';
-$nameErr = $mailErr = $topicErr = $messageErr = $actionPage = "";
+$nameErr = $mailErr = $topicErr = $messageErr = "";
 $userName = $userMail = $topic = $userMessage = "";
 $selectOption = ["\"\" disabled selected hidden>Une question/remarque?",
                     "\"le métier de dev.\">Plus de renseignements sur le métier de dev.",
@@ -33,9 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
         $messageErr = "!! champ oblibatoire !!";
     }
 
-    if ($nameErr != "" OR $mailErr != "" OR $topicErr != "" OR $messageErr != "") {
-        $actionPage = "infos.php";
-    } else {
+    if ($nameErr == "" AND $mailErr == "" AND $topicErr == "" AND $messageErr == "") {
         header('location: thanks.php?userName=' . $userName . '&topic=' . $topic . '&userMail=' . $userMail . '&userMessage=' . $userMessage);
     }
 }
@@ -55,7 +53,7 @@ require_once '_header.php';
         <hr class="m-4">
     </section>
     <section>
-        <form class="infos-form" method="POST" action="<?php echo $actionPage; ?>">
+        <form class="infos-form" method="POST" action="">
             <input type="text" placeholder="Nom :" name="userName" required>
             <input type="email" placeholder="@ :" name="userMail" required>
             <select class=infos-select id="infos-motif" name="topic" required>
